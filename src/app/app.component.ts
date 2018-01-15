@@ -15,11 +15,11 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    alert("ngOnIniit");
-    this.getContactList();
+ 
+    // this.getContactList();
   }
   submitContact(Contact : NgForm){
-    alert('working');
+    
     this._service.saveContact(Contact)
   }
   getContactList(){

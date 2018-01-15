@@ -1,9 +1,11 @@
 export class Contact implements IContact {
-    constructor(public Name:string,public Contact :number){
+   
+    constructor(public Name:string,public Mobile :string,public Gender:string){
     }
 }
 
 export interface IContact{
     Name: string;
-    Contact: number;
+    Mobile:string;
+    Gender:string;
 }

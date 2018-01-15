@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="col-lg-12">
-    <form #formSubmit="ngForm" (ngSubmit)="submitContact(formSubmit)" >
+  <div class="col-lg-6">
+    <form #formSubmit="ngForm" (ngSubmit)="submitContact(formSubmit.value)" >
         <div class="panel-body">
           <div class="form-group">
             <label>Name</label>
