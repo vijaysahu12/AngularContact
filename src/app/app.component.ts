@@ -15,20 +15,16 @@ export class AppComponent {
   }
 
   ngOnInit(){
- 
     // this.getContactList();
   }
   submitContact(Contact : NgForm){
     
-    this._service.saveContact(Contact)
+     this._service.saveContact(Contact)
   }
-  getContactList(){
-      this._service.getContactList()
-      .subscribe(
-        (callBackContactData)=>this.contacts = callBackContactData,
-        (error)=> console.log(error));
-  }
-  getTotalContactCount(): number {
-    return this.contacts.length;
-  }
+  // getContactList(){
+  //     this._service.getContactList()
+  //     .subscribe(
+  //       (callBackContactData)=>this.contacts = callBackContactData,
+  //       (error)=> console.log(error));
+  // } 
 }

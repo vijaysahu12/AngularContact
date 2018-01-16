@@ -22,6 +22,7 @@ export class ContactServiceService {
 
   saveContact(Contact){
     let url  = _App.ContactController +_App.SaveContact;
-    this._PostService.PostMethod(url,Contact);
+    // this._PostService.PostMethod(url,Contact);
+    this._PostService.PostMethod3();
   }
 }
