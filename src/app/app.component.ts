@@ -10,17 +10,14 @@ import { ContactServiceService } from "app/Services/contact-service.service"
 export class AppComponent {
    
   contacts : IContact[];
-  constructor(private _service : ContactServiceService){
+  constructor(){
 
   }
 
   ngOnInit(){
     // this.getContactList();
   }
-  submitContact(Contact : NgForm){
-    
-     this._service.saveContact(Contact)
-  }
+  
   // getContactList(){
   //     this._service.getContactList()
   //     .subscribe(

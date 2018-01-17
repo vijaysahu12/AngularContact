@@ -5,18 +5,24 @@ import { HttpModule } from '@angular/http';
 import { ContactServiceService } from 'app/Services/contact-service.service'
 import { PostService} from "app/Services/PostRequest";
 import { AppComponent } from './app.component';
+import { CreateContactComponent } from "./Components/create-contact/create-contact.component";
+import { ListContactComponent } from './Components/list-contact/list-contact.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateContactComponent,
+    ListContactComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+
   ],
   providers: [ContactServiceService,PostService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,CreateContactComponent,ListContactComponent]
 })
 export class AppModule { }
